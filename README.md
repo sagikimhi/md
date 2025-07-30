@@ -2,7 +2,7 @@
 
 Markdown editor and live-preview directly from your terminal.
 
-![markdown editor and preview](assets/markdown-preview.gif)
+<img src="assets/md-preview.gif" height="600" width="850">
 
 ## Installation & Usage
 
