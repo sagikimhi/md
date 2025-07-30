@@ -1,0 +1,25 @@
+# Exclude all, and then explicitly include relevant files/directories
+
+*
+
+!*/
+!.github/**/*
+!assets/**/*.gif
+!src/**/*.py
+!tests/**/*.py
+
+# Unexclude common files
+
+!.gitignore
+!.python-version
+!.pre-commit-config.yaml
+
+!LICENSE
+!README.md
+!Dockerfile
+
+!uv.lock
+!uv.toml
+!ruff.toml
+!pyproject.toml
+!pyrightconfig.json

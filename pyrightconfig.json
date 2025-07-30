@@ -1,0 +1,22 @@
+{
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        ".git",
+        "dist",
+        "**/.ruff_cache",
+        "**/.pytest_cache",
+        "**/.gitignore",
+        "**/__pycache__",
+        "**/*.eggs",
+        "**/*.pyc",
+        "**/*.pyd",
+    ],
+    "pythonVersion": "3.12",
+    "pythonPlatform": "All",
+    "typeCheckingMode": "standard",
+    "reportMissingImports": "error",
+    "useLibraryCodeForTypes": true,
+    "reportMissingTypeStubs": false,
+}

@@ -1,0 +1,90 @@
+fix = true
+src = ["src", "tests"]
+exclude = [
+    ".git",
+    ".venv",
+    "*.eggs",
+    ".ruff_cache",
+    ".pytest_cache",
+    ".gitignore",
+    "__pycache__",
+    "dist",
+    "*.pyi",
+]
+cache-dir = "~/.cache/ruff"
+line-length = 79
+indent-width = 4
+target-version = "py312"
+respect-gitignore = true
+
+[analyze]
+direction = "Dependencies"
+detect-string-imports = true
+
+[format]
+line-ending = "auto"
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+skip-magic-trailing-comma = false
+docstring-code-line-length = "dynamic"
+
+[lint]
+select = [
+    "A",
+    "B",
+    "C4",
+    "D",
+    "E",
+    "F",
+    "N",
+    "W",
+    "DJ",
+    "PT",
+    "EM",
+    "UP",
+    "NPY",
+    "ISC",
+    "ICN",
+    "SIM",
+    "RUF",
+    "PERF",
+    "ASYNC",
+]
+ignore = [
+    "C408",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D104",
+    "D105",
+    "D205",
+    "UP031",
+    "RUF022",
+    "ASYNC110",
+]
+
+[lint.pydocstyle]
+convention = "numpy"
+
+[lint.pycodestyle]
+max-doc-length = 79
+max-line-length = 79
+
+[lint.flake8-quotes]
+avoid-escape = true
+
+[lint.flake8-annotations]
+allow-star-arg-any = true
+suppress-dummy-args = true
+ignore-fully-untyped = true
+
+[lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[lint.flake8-comprehensions]
+allow-dict-calls-with-keyword-arguments = true
+
+[lint.flake8-unused-arguments]
+ignore-variadic-names = true
