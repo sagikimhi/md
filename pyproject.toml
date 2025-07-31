@@ -29,7 +29,7 @@ md = "md.__main__:main"
 [project]
 name = "md"
 readme = "README.md"
-version = "0.1.0dev"
+version = "0.1.0.dev1"
 license = "Apache-2.0 OR MIT"
 authors = [{ name = "Sagi Kimhi", email = "sagi.kim5@gmail.com" }]
 maintainers = [{ name = "Sagi Kimhi", email = "sagi.kim5@gmail.com" }]
